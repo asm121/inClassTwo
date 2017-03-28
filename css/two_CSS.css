@@ -1,0 +1,129 @@
+/*All css for this project should be in this file only, not in the html file*/
+.h1{
+    font-size: larger;
+}
+
+#one{
+    font-size: small;
+    transition-duration: 1s;
+}
+
+#one:hover{
+
+    font-size: xx-large;
+
+
+}
+
+#two{
+    font-size: medium;
+    transition-duration: .5s;
+}
+
+#two:hover{
+    color: #7bffe9;
+}
+
+#three{
+    font-size: medium;
+    transition-duration: 10s;
+}
+
+#three:hover{
+
+    transform: rotate(-45deg);
+
+
+}
+
+#four{
+    font-size: medium;
+    transition-duration: 2s;
+
+
+}
+
+#four:hover{
+    transform: skewX(-20deg) ;
+}
+
+#five{
+    font-size: medium;
+    transition-duration: 2s;
+}
+
+#five:hover{
+
+    opacity: 0;
+
+
+}
+
+/* referenced from https://css-tricks.com/left-and-right/ */
+#left
+{
+    float: left;
+    width: 50%;
+}
+
+#right{
+
+    float: left;
+    width: 50%;
+}
+
+
+@keyframes load {
+    0%   {
+        opacity: 1;
+        animation-timing-function: ease-in;}
+    10%  {
+        opacity: .75;
+        animation-timing-function: ease-in;}
+    20%  {
+        opacity: .50;
+        animation-timing-function: ease-in;}
+    30%  {
+        opacity: .25;
+        animation-timing-function: ease-in;}
+    40% {
+        opacity: 0;
+        animation-timing-function: ease-in;}
+
+    50%   {
+        opacity: .25;
+        animation-timing-function: ease-in;}
+    60%  {
+        opacity: .3;
+        animation-timing-function: ease-in;}
+    70%  {
+        opacity: .5;
+        animation-timing-function: ease-in;}
+    80%  {
+        opacity: .75;
+        animation-timing-function: ease-in;}
+    90% {
+        opacity: .9;
+        animation-timing-function: ease-in;}
+    100%{
+        opacity: 1;
+        animation-timing-function: ease-in;}
+    }
+
+
+
+
+.bcircle {
+    display: inherit;
+    background: black ;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    animation-name: load;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
